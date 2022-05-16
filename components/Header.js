@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import { ConnectButton } from 'web3uikit'
 import Search from '../assets/svg/search'
 
 const styles = {
@@ -54,7 +55,7 @@ const Header = () => {
           </div>
         </nav>
         <div className="flex items-center">
-          {/* <ConnectButtom /> */}
+          <ConnectButton />
           <div className={styles.inputContainer}>
             <Search />
             <input className={styles.input} placeholder="Search" />
